@@ -1,0 +1,155 @@
+body {
+  background-color: #051e30;
+  color: white;
+}
+
+// home
+.home {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+
+  &__title {
+    text-align: left;
+    padding: 10px 15px;
+    font-weight: 600;
+  }
+  
+  &__tabs {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  &__tab {
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 600;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgb(176, 170, 170);
+    
+    &--active {
+      border-bottom: 2px solid rgb(245, 151, 166);
+    }
+
+    &:hover {
+      background-color: pink;
+    }
+  }
+}
+
+
+// home post form
+.post-form {
+
+  &__textarea {
+    width: 100%;
+    box-sizing: border-box;
+    height: 200px;
+    font-size: x-large;
+    outline: none;
+    border: none;
+    resize: none;
+    border-bottom: 1px solid white;
+    background-color: #051e30;
+    color: white;
+    padding: 10px 15px;
+    
+    &:focus::placeholder {
+      color: transparent;
+    }
+  }
+
+
+  &__submit-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    align-items: center;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+  }
+
+  &__submit-btn {
+    width: 65px;
+    height: 35px;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(23, 146, 235);
+    color: white;
+    cursor: pointer;
+  }
+}
+
+
+// home post list
+.post-box {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  border-bottom: 1px solid white;
+  
+  &__info--flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+  
+  &__content {
+    text-align: left;
+    color: white;
+    padding: 10px 15px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__footer--flex {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  &__comments, &__likes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__edit-btn, &__remove-btn {
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__edit-btn {
+    background-color: gray;
+  }
+
+  &__remove-btn {
+    background-color: red;
+  }
+}
+
+.post__profile-img {
+  width: 40px;
+  height: 40px;
+}
+
+.post__profile-icon {
+  width: 100%;
+  height: 100%;
+}
